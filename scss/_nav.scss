@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: fixed; }
+  
+  nav ul li {
+    padding: 8px 15px; }
+  
+  ul li a {
+    display: inline-block;
+    color: #080808;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent; }
+  
+  nav ul li a:hover {
+    color: #d81b1b;
+    border-bottom: 2px solid #d31919; }

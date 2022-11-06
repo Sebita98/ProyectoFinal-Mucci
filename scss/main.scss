@@ -1,0 +1,53 @@
+
+@import url("https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,300;1,700 & display=swap");
+@import "nav";
+@import "productos";
+@import "rrhh";
+@import "contacto";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+
+
+/* Texto presentacion */
+.presentacion {
+  background-image: url(../imgs/lab3.png.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+
+
+/* animacion compañia */
+.compania {
+  animation-name: entrada-superior;
+  animation-duration: 2s; }
+
+@keyframes entrada-superior {
+  0% {
+    transform: translateY(-700px); }
+  100% {
+    transform: translateY(0); } }
+
+h2 {
+  text-align: center; }
+
+.linea {
+  height: 50vh; }
+
+
+ @media screen and (max-width: 768px){
+  .ulitmo{
+    height: 300%;
+  }
+ }

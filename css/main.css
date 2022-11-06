@@ -1,0 +1,292 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,300;1,700 & display=swap");
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: fixed; }
+
+nav ul li {
+  padding: 8px 15px; }
+
+ul li a {
+  display: inline-block;
+  color: #080808;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent; }
+
+nav ul li a:hover {
+  color: #d81b1b;
+  border-bottom: 2px solid #d31919; }
+
+/* cartas */
+main {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imgs/lab3.png.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 180vh;
+  text-align: center;
+  align-items: center; }
+
+/* cartas giratorias productos */
+.cardp {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  margin: 20px; }
+
+.cardp .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+  background-color: #fff; }
+
+.cardp .front {
+  transform: perspective(600p) rotateY(0deg);
+  box-shadow: 0 5px 10px #1717cc; }
+
+.cardp .front img {
+  position: absolute;
+  width: 100%;
+  height: 30%; }
+
+.cardp .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.678);
+  text-align: center;
+  letter-spacing: 1px; }
+
+.cardp .back {
+  transform: perspective(600px) rotatey(180deg);
+  background: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center; }
+
+.cardp .back h3 {
+  font-size: 30px; }
+
+.cardp:hover .front {
+  transform: perspective(600px) rotatey(180deg); }
+
+.cardp:hover .back {
+  transform: perspective(600px) rotatey(360deg); }
+
+/* Estilado de Cartas de productos */
+header {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.616), rgba(5, 7, 12, 0.5)), url(../imgs/prueba1.png.jpg); }
+
+.linea {
+  padding: 20px;
+  color: white; }
+
+ul li a {
+  text-decoration: none;
+  color: wheat; }
+
+.cartas {
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "cardp  cardp" "cardp  cardp";
+  justify-content: space-around; }
+
+.card1 {
+  grid-area: cardp; }
+
+.card2 {
+  grid-area: cardp; }
+
+.card3 {
+  grid-area: cardp; }
+
+.card4 {
+  grid-area: cardp; }
+
+/* media queries productos */
+@media screen and (max-width: 768px) {
+  .cartas {
+    display: grid;
+    grid-template-areas: "cardp" "cardp" "cardp" "cardp"; }
+  .card1 {
+    grid-area: cardp; }
+  .card2 {
+    grid-area: cardp; }
+  .card3 {
+    grid-area: cardp; }
+  .card4 {
+    grid-area: cardp; } }
+
+/* rrhh */
+.rrhh {
+  background-color: rgba(255, 0, 0, 0.74);
+  background-size: cover; }
+
+.talento {
+  height: 60vh;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  animation-name: entrada-principal;
+  animation-duration: 3s; }
+
+@keyframes entrada-principal {
+  0% {
+    transform: translatey(800px); }
+  100% {
+    transform: translatey(0); } }
+
+.crecimiento {
+  height: 60vh;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  animation-name: entrada-inferior;
+  animation-duration: 3s; }
+
+@keyframes entrada-inferior {
+  0% {
+    transform: translatex(800px); }
+  100% {
+    transform: translatex(0); } }
+
+@media screen and (max-width: 768px) {
+  .crecimiento {
+    margin-top: 8cm; } }
+
+.cv {
+  background-color: white;
+  padding: 20px;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  animation-name: entrada-lateral;
+  animation-duration: 5s; }
+
+@keyframes entrada-lateral {
+  0% {
+    transform: translatex(-1000px); }
+  100% {
+    transform: translatex(0); } }
+
+@media screen and (max-width: 768px) {
+  .cv {
+    padding: 70px;
+    margin-top: 50vh; } }
+
+/* contacto */
+.pp {
+  text-align: center; }
+
+.contacto, .contacto2 {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imgs/contacto.png.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 20px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center; }
+
+@media screen and (max-width: 768px) {
+  .contacto, .contacto2 {
+    padding: 20px; } }
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center; }
+
+.box-container .box {
+  height: 9rem;
+  width: 17rem;
+  background: #101010a6;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
+  margin: 2rem; }
+
+.box-container .box i {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #4527b0;
+  font-size: 2rem;
+  margin: 1rem 0; }
+
+.box-container .box h3 {
+  font-size: 20px;
+  color: #4527b0; }
+
+.box-container .box p {
+  padding: 5px;
+  font-size: 16px; }
+
+.footer {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imgs/contacto.png.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+/* Texto presentacion */
+.presentacion {
+  background-image: url(../imgs/lab3.png.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+/* animacion compañia */
+.compania {
+  animation-name: entrada-superior;
+  animation-duration: 2s; }
+
+@keyframes entrada-superior {
+  0% {
+    transform: translateY(-700px); }
+  100% {
+    transform: translateY(0); } }
+
+h2 {
+  text-align: center; }
+
+.linea {
+  height: 50vh; }
+
+@media screen and (max-width: 768px) {
+  .ulitmo {
+    height: 300%; } }

@@ -1,0 +1,71 @@
+
+/* contacto */
+.pp {
+    text-align: center; }
+    
+.contacto {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imgs/contacto.png.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+  
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center; }
+  
+  @media screen and (max-width: 768px) {
+    .contacto  {
+      padding: 20px; } }
+  
+  .contacto2 {
+    @extend .contacto;
+  
+  }
+  
+  .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center; }
+  
+  .box-container .box {
+    height: 9rem;
+    width: 17rem;
+    background: #101010a6;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
+    margin: 2rem; }
+  
+  .box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #4527b0;
+    font-size: 2rem;
+    margin: 1rem 0; }
+  
+  .box-container .box h3 {
+    font-size: 20px;
+    color: #4527b0; }
+  
+  .box-container .box p {
+    padding: 5px;
+    font-size: 16px; }
+  
+  .footer {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imgs/contacto.png.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; }
