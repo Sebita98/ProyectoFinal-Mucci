@@ -1,9 +1,14 @@
+@mixin nav1 ($color)  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $color;
+  position: fixed;
+}
+
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    position: fixed; }
+  @include nav1 (white);
+    }
   
   nav ul li {
     padding: 8px 15px; }
