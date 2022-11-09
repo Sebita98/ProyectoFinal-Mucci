@@ -28,7 +28,6 @@ main {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 180vh;
   text-align: center;
   align-items: center; }
 
@@ -251,6 +250,10 @@ ul li a {
   background-attachment: fixed;
   background-size: cover; }
 
+@media screen and (max-width: 768px) {
+  pie3 {
+    padding: 10px; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -286,7 +289,3 @@ h2 {
 
 .linea {
   height: 50vh; }
-
-@media screen and (max-width: 768px) {
-  .ulitmo {
-    height: 300%; } }
